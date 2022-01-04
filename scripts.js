@@ -1,14 +1,10 @@
-//print to console
-console.log("Hello!");
-console.log(4+4);
-
-//variables
-var total = 14.0;
-console.log("£" + total); //concatentation
-console.log(`The total price is £${total}`); //interpolation
 
 
+//invoice example
+var sign = "Bristol Zoo!";
+var length = sign.length;
+var subtotal = length * 2.99;
 
-
-
-
+document.getElementById("userSign").innerHTML= sign;
+document.getElementById("tiles").textContent = length;
+document.getElementById("subtotal").textContent = `£${subtotal}`;
